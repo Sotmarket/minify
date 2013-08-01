@@ -265,7 +265,7 @@ class Minify {
         }
         
         // check server cache
-        if (null !== self::$_cache && ! self::$_options['debug']) {
+        if (null !== self::$_cache) {
             // using cache
             // the goal is to use only the cache methods to sniff the length and 
             // output the content, as they do not require ever loading the file into
